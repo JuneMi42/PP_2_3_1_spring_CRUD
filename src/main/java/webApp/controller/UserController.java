@@ -58,7 +58,6 @@ public class UserController {
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") int id) {
         userService.deleteById(id);
-        System.out.println("Меня удалеле :(");
         return "redirect:/user";
     }
 }
